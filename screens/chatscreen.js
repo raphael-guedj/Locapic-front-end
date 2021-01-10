@@ -11,7 +11,7 @@ import { ListItem, Input, Button } from "react-native-elements";
 import socketIOClient from "socket.io-client";
 import Ionicons from "react-native-vector-icons/Ionicons";
 
-let socket = socketIOClient("http://192.168.1.80:3000");
+let socket = socketIOClient("https://locapicreactnative.herokuapp.com/");
 
 function ChatScreen(props) {
   const [currentMessage, setCurrentMessage] = useState();

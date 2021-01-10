@@ -8,7 +8,7 @@ import { FontAwesome, Ionicons } from "@expo/vector-icons";
 import socketIOClient from "socket.io-client";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-let socket = socketIOClient("http://192.168.1.80:3000");
+let socket = socketIOClient("https://locapicreactnative.herokuapp.com/");
 
 function MapScreen(props) {
   const [errorMsg, setErrorMsg] = useState(null);
